@@ -1,0 +1,9 @@
+*Defination and rules of variables:
+- Variable is a data name and it is used to store data value.
+
+*Rules to declare variable:
+
+1. Must start with an alphabet.
+2.Uppercase and lowercase are significant.
+3.keywords are not allowed as a variable name.
+4.space is not allowed between varable name.
