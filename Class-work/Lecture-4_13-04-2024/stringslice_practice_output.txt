@@ -1,0 +1,16 @@
+        0123456789
+s = "Nirmal Oza"
+        0987654321
+
+print(s[3:9]) = mal Oz
+print(s[3:-7:2]) = blank space
+print(s[:6]) = Nirmal
+print(s[2:]) = rmal oza
+print(s[3:7:3]) = m 
+print(s[: :4]) = Naz
+
+print(s[-7:-3]) = mal
+print(s[:-3]) = Nirmal
+print(s[-4:]) =  Oza
+print(s[-9:-1:2]) = imloa
+print(s[::-3]) = a mN

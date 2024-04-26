@@ -1,0 +1,14 @@
+*List is a group of diffrent type of data
+
+#List Slicing:
+1. 2
+2. 400
+3. 1
+4. 1,2
+5. 2, "java", False, 100,200
+
+6. 1
+7. 2
+8. 1
+9. 60, 'java', 'python', 2
+10. 2.2, "tops"

@@ -1,0 +1,14 @@
+                01234567890123456	+
+string = "Python Programing"
+                01234567890123456	-
+1.hon Progra
+2.Python Programi
+3.thon Programing
+4.h oa
+X 5.Pngn
+
+6.ython Program
+7.Python Progr
+8.ming
+9.Pto rgai
+X 10.gmgPoy

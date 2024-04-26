@@ -1,0 +1,41 @@
+OOP 
+
+The main OOP concepts are:
+1.Class
+2.Object
+3.Inheritance
+4.Polymorphism
+5.Encapsulation
+6.Abstraction
+
+
+*Class:
+-Class is a group of different types of variable and functions.
+
+*Object:
+-Object is an instance of class.
+
+*Inheritance:
+-The Object of one class can acquire the property of object of another class.
+-Creating a new class from an existing class is called inheritance.
+
+*Polymorphism:
+-One name multiple form
+
+2 Types:
+1.Compile time polymorphism (method overloading)
+2.Run time polymoprphism (method overriding)
+
+1.method overloading:
+-When there is a more than one method in a single class having the same name but with a diff. number of arguments than it is called method overloading.
+
+2.method overriding:
+-when there is a same method prototype in your both base class and derive class and if you call that method using the object of derive class then only derive class method will be call so you can say that method of derive class overrides the method of base class.
+
+*Encapsulation:
+-To bind a code and data into a single unit is called Encapsulation.
+
+*Abstraction:
+-Abstraction means data hiding.
+
+

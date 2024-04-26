@@ -1,0 +1,6 @@
+it is a set of instruction that perform a specific task.
+
+two types of function:
+
+1.UDF
+2.Library Function
