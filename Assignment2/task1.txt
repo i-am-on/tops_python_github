@@ -1,0 +1,15 @@
+Que. What is List? How will you reverse a list?
+
+
+*List is a group of diffrent type of data
+
+-User can reverse the list by giving jumping in negetive or using a string reverse function.
+
+Ex.1:
+l = [1,2,1.1,2.2,"tops",True,"Python",10,20,1,2]
+l.reverse()
+print(l)
+
+Ex.2:
+l = [1,2,1.1,2.2,"tops",True,"Python",10,20,1,2]
+print(l[::-5])

@@ -1,0 +1,5 @@
+Que. What is tuple? Difference between list and tuple.
+
+*Tuple is one of 4 built-in data types in Python used to store collections of data.
+
+The main difference between the two is that tuples are immutable, meaning they cannot be changed once they are created. This makes them ideal for storing data that should not be modified.

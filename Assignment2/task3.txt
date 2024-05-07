@@ -1,0 +1,3 @@
+Que. Diffrence between append() and extend() methods.
+
+Ans. append() function can add only one given specific value at a time where extend() function can merge two list together where second list will merge at the end of the first list.
