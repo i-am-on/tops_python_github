@@ -1,76 +1,69 @@
-print("\n                   WELCOME TO TOPS QUIZ GAMING CHALLENGE")
+print("                            Welcome To Tops Quiz Gaming Challange\n")
+print("                            Select Your Role : \n")
 
-print("\n                   Select your role : \n")
+print("                                   -> 1.Quiz Master (Press 1)")
+print("                                   -> 2.Quiz Craker (Press 2)")
 
-print("                              -> Quiz Master    (Press 1)")
-print("                              -> Quiz cracker   (Press 2)")
-
-
-
-while True:
+role = int(input("\nEnter Your Role : "))
     
-    choice=int(input("\n Enter your role : "))
+if role==1:
+    print("                               Welcome Master")
+    print("             Shake Your Brain And Add Some Challanging Questions..")
+    print("         --------------------------------------------------------------\n")
+    d1={}
+    while True:
+        print("                                   Menu")
+        print("                           Press 1 for Add Questions")
+        print("                           Press 2 for View Questions")
+        print("                           Press 3 for Delete Questions")
+        print("                           Press 4 for Exit\n")
+        print("\n")
+            
+        choice = int(input("Which Operation You Want To Perform : "))
+        print("\n")
 
-    if choice == 1:
+        if choice==1:
+                
+            que = input("\nEnter the question: ")         
+            op_a = input("Enter op 1: ")
+            op_b = input("Enter op 2: ")
+            ans =input("Enter right answer : ")
 
-        print("\n                        WELCOME MASTER ")
-        print("          SHAKE YOUR BRAIN AND ADD SOME CHALLENGING QUESTIONS...")
+            d1[que]={"A":op_a,"B":op_b,"Answer":ans}
 
-        print("\n                              Menu")
-        print("                      Press 1 for add questions")
-        print("                      Press 2 for view questions")
-        print("                      Press 3 for delete questions")
-        print("                      Press 4 for exit")
+            print("\nQuestion Added Successfully!")
+            print("\n")
 
-        choice=int(input("\n Which operation you want to perform : "))
+        elif choice==2:
 
-        if choice == 1:
-            print(" Add questions : \n")
+            if len(d1) > 0:
+                for key,value in d1.items():
+                    print("Here is the Question: \n")
+                    print(key, " : ", value)
+                    print("\n")
+            else:
+                print("No questions available to view.")
+                print("\n")
 
-            q = input("Enter Questions: ")
-            op_a = input("Enter Option A: ")
-            op_b = input("Enter Option B: ")
-            ans = input("Enter Right Answer: ")
+        elif choice==3:
+                
+            if len(d1) > 0:
+                key = input("Enter the question to delete: ")
 
-            d = {"q":q,
-                 "Option":
-                 {
-                     "A":op_a,
-                     "B":op_b,
-                 },
-                 "ans":ans}
+                if key in d1:
+                    d1.pop(key)
+                    print("Question deleted successfully!")
+                    print("\n")
+                else:
+                    print("Question not found!")
+                    print("\n")
+            else:
+                print("No questions available to delete.")
+                print("\n")
 
-            print("\n",d)
-            print("\n Question Added Successfully!")
-
-
-        elif choice == 2:
-            print(" View questions")
-
-            for key, value in d.items():
-                print(key, ":", value)
-
-
-        elif choice == 3:
-            print(" Delete questions")
-
-        
-        elif choice == 4:
-            print(" Updation Complete")
+        elif choice==4:
+                
+            print("Master Exit Successfully :-)")
             break
 
-        else:
-            print(" Wrong choice")
 
-
-        
-
-    elif choice == 2:
-        print("                  WELCOME QUIZ CRACKER \n")
-
-        break
-
-    else:
-        print(" Wrong Choice")
-        break
-    
