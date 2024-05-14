@@ -1,0 +1,3 @@
+task-18. What happens when „1‟== 1 is executed?
+
+Ans. testing if a string is equal to an integer, which it never can be. Python doesn't convert the values on both sides of == to the same type. 1 == 1 would return True and "1" == "1" would return True, but the string, "1", is not equal to the integer, 1.

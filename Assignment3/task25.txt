@@ -1,0 +1,31 @@
+task-25. Explain Inheritance in Python with an example? What is init? 
+Or What Is A Constructor In Python?
+
+- Inheritance: The object of one class can aquire the properties of object of another class is called inheritance or creating a new class from existing class is called inheritance.
+
+- In Python, a constructor is a special method that is called when an object is created.
+The purpose of a python constructor is to assign values to the data members within the
+class when an object is initialized. The name of the constructor method is always __init__.
+
+
+Example: 
+
+class A:
+    def getA(self,a):
+        self.a=a
+    def putA(self):
+        print("A : ",self.a)
+
+class B(A):
+    def getB(self,b):
+        self.b=b
+    def putB(self):
+        print("B : ",self.b)
+
+
+b=B()
+b.getA(10)
+b.getB(20)
+b.putA()
+b.putB()
+

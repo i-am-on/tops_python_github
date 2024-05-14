@@ -1,0 +1,24 @@
+task-14. How many except statements can a try-except block have?
+
+Ans. A try statement can have more than one except clause.
+
+here is some built-in exception:
+
+ArithmeticError	Raised when an error occurs in numeric calculations
+
+AssertionError	Raised when an assert statement fails
+
+AttributeError	Raised when attribute reference or assignment fails
+
+Exception		Base class for all exceptions
+
+EOFError		Raised when the input() method hits an "end of file" condition (EOF)
+
+FloatingPointError	Raised when a floating point calculation fails
+
+ValueError	Raised when there is a wrong value in a specified data type
+
+ZeroDivisionError	Raised when the second operator in a division is zero
+GeneratorExit	Raised when a generator is closed (with the close() method)
+
+ImportError	Raised when an imported module does not exist

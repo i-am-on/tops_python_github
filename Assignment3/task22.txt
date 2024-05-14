@@ -1,0 +1,17 @@
+task-22. How to Define a Class in Python? What Is Self? Give An Example Of 
+A Python Class.
+
+
+Ans. A class is a blueprint that defines the variables and the methods 
+common to all objects of a certain kind.
+
+- A class in Python is defined using the "class" keyword.
+
+- self is a reference to the current instance of the class, used to access instance attributes and methods.
+
+class Abc:
+	def  p(self):
+		print("Hello World!")
+
+a = Abc()
+a.p()

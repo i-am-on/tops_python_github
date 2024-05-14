@@ -1,0 +1,15 @@
+task-27. 
+
+
+Ans. In Python, the isinstance() function is used to check whether an object is an instance of a specified class or a tuple of classes. This function returns True if the object is an instance of the given class and False otherwise.
+
+Example:
+
+class A:
+    pass
+
+o1 = A()
+
+print(isinstance(o1, A))
+
+- Above example shows that o1 is an instance of the class A by using isinstance() function.

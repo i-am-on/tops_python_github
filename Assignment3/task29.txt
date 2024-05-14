@@ -1,0 +1,4 @@
+task-29. What relationship is appropriate for Student and Person? 
+
+
+Ans. The appropriate relationship between Student and Person in an object-oriented programming context is typically an inheritance relationship. This is because a student is a specialized form of a person, meaning a Student "is-a" Person.

@@ -1,0 +1,4 @@
+task-17. When is the finally block executed? 
+
+
+Ans. The finally block will be executed no matter if the try block raises an error or not. At the end finally block always execute.

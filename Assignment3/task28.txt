@@ -1,0 +1,5 @@
+task-28. What relationship is appropriate for Course and Faculty? 
+
+Ans. In most academic contexts, aggregation is typically the more appropriate relationship because:
+
+Courses can exist before being assigned a specific faculty member. Faculty members often teach multiple courses, and courses may have multiple faculty members over time.
