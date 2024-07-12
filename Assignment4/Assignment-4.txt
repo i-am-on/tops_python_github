@@ -1,0 +1,86 @@
+Que.1 Why Django should be used for web-development? 
+          Explain how you can create a project in Django?
+
+Ans.1 Django is a fast and simple framework that helps to save development time and therefore increase the overall cost-effectiveness of the project. Also, Django has one of the best out-of-the-box security systems out there. It helps developers avoid common security issues that could otherwise incur additional costs later.
+
+- Some Step's to create a project in Django :
+(1)create virtual env. ---> python -m venv myvenv	
+(2)pip install django - For Install Django
+(3)django-admin startproject project_name(mysite) .
+
+For Create a Django Project:
+(4)python manage.py startapp appname(myapp) - For Create a Django App
+(5)python manage.py makemigrations - For make a script of model
+
+(6)python manage.py migrate - Do changes in admin side using the script created 
+(7)python manage.py runserver - For Run the Development Server
+
+
+
+Que.2 How to check installed version of django?
+
+Ans.2 Open your cmd and run the following command : 
+	python -m django --version
+
+
+
+Que.3 Explain what does django-admin.py make messages command is used for?
+
+Ans.3 The make_messages command scans your Django project for text strings marked for translation in your code and creates or updates message files for different languages. 
+
+These message files contain the original text strings and placeholders, and they serve as templates for translators to provide translations.
+
+The make_messages command in Django is a management utility that automates the creation of translation files. It searches through the codebase for instances of the {% trans %} template tag and generates a message file for each specified language. These files are then used to provide translations of the marked strings.
+
+
+
+Que.4 What is Django URLs?make program to create django urls.
+
+Ans.4  In Django, a URL is a unique string that represents a specific resource or action on a web application. URLs are used to route users to the appropriate content or functionality when they visit a web application.
+
+In Django, URLs are patterns used to map URLs to views within a web application. The URL patterns are defined in the urls.py module of each Django app, and they determine which view function or class-based view should be called for a given URL.
+
+urls.py file:
+from django.urls import path
+from . import views
+
+urlpatterns = [
+path('', views.index, name='index'),
+path('about/', views.about, name='about'),
+path('contact/', views.contact, name='contact'),
+]
+
+
+Que.5 What is a QuerySet ? Write program to create a new Post object in database.
+
+Ans.5 QuerySet: QuerySet is a collection of database queries that can be used to retrieve data from a database. It's a high-level API provided by Django for interacting with databases.
+
+Models.py:
+from django.db import models
+
+class User(models.Model):
+	fname=models.CharField(max_length=100)
+	lname=models.CharField(max_length=100)
+	email=models.EmailField()
+	mobile=models.PositiveIntegerField()
+	address=models.TextField()
+	password=models.CharField(max_length=100)
+	profile_picture=models.ImageField(upload_to="profile_picture/",default="")
+	usertype=models.CharField(max_length=100,default="user")
+
+	def __str__(self):
+		return self.fname+" "+self.lname
+ 
+
+
+Que.6 Mention what command line can be used to load data into Django?
+
+Ans.6 To load data into Django you have to use the command line Django-admin.py loaddata. The command line will searches the data and loads the contents of the named fixtures into the database.
+
+Typically, you use the dumpdata command to export data from a database and use the loaddata command to import data from the file into the same or another database.
+
+
+
+Que.7 Explain what does django-admin.py make messages command is used for?
+
+Ans.7 Same question refer ANSWER no.3 for this.
